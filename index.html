@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="icon" href="Image/icon.JPG">
+    <title>SAVA</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="uppercase">
+            SAVA
+        </h1>
+        <nav>
+            <button></button>
+            <ul id="menu">
+                <li><a href="#home" class="uppercase">HOME</a></li>
+                <li><a href="#appointment" class="uppercase">APPOINTMENT</a></li>
+                <li><a href="#price" class="uppercase">PRICE</a></li>
+                <li><a href="#contact" class="uppercase">CONTACT</a></li>
+                <li>
+                    <i class="bi bi-suit-heart sign-in"></i>
+                    <i class="bi bi-suit-heart-fill sign-out" hidden></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="loader"></div>
+        <section id="message">
+            <p></p>
+        </section>
+        <section id="field">
+            <div id="record" hidden>
+                <p>Name*</p>
+                <input type="text" placeholder="Irina" id="record-name">
+                <p>last Name</p>
+                <input type="text" id="record-last-name">
+                <p>Phone*</p>
+                <input type="tel" placeholder="+375291265987" id="record-phone">
+                <p>Service*</p>
+                <select id="record-service"></select>
+                <br><button id="record-button" class="uppercase">Record</button>
+            </div>
+            <div id="check-record" hidden>
+                <p>Name:</p>
+                <p id="check-record-name" class="color"></p>
+                <p>last Name:</p>
+                <p id="check-record-last-name" class="color"></p>
+                <p>Service:</p>
+                <p id="check-record-service" class="color"></p>
+                <p>Date:</p>
+                <p id="check-record-date" class="color"></p>
+                <p>Time:</p>
+                <p id="check-record-time" class="color"></p>
+                <button id="check-record-button" class="uppercase">Close</button>
+            </div>
+            <table>
+                <tr>
+                    <td class="uppercase bold">Date</td>
+                    <td class="uppercase bold">Time</td>
+                    <td class="uppercase bold">Service</td>
+                    <td class="uppercase bold">Name</td>
+                    <td class="uppercase bold">Last Name</td>
+                    <td class="uppercase bold">Phone</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <section id="home">
+            <p>manicure studio <br><span class="uppercase">SAVA</span></p>
+            <h4>we take care of every client's nails</h4>
+            <form action="#appointment">
+                <button class="uppercase">TO MAKE AN APPOINTMENT</button>
+            </form>
+        </section>
+        <section id="login-form" hidden>
+            <p class="uppercase bold">Login</p>
+            <input type="text" id="login">
+            <p class="uppercase bold">Password</p>
+            <input type="password" id="password">
+            <br><button class="uppercase">Sign in</button>
+        </section>
+        <section id="appointment">
+            <div class="div-loader" hidden>
+                <div class="loader"></div>
+            </div>
+            <div id="calendar">
+            </div>
+            <div id="check-appointment">
+                <p>Сheck the appointment by phone number</p>
+                <input type="tel" placeholder="+375291265987">
+                <button id="check" class="uppercase">Check</button>
+            </div>
+            <div id="edit-appointments" hidden>
+                <button id="edit" class="uppercase">Edit appointments</button>
+            </div>
+        </section>
+        <section id="price">
+            <table>
+                <tr>
+                    <td class="uppercase bold">Service</td>
+                    <td class="uppercase bold">cost</td>
+                </tr>
+            </table>
+            <div class="loader" hidden></div>
+        </section>
+        <section id="contact">
+            <p class="uppercase bold">Name of your master</p>
+            <input type="text" value="Irina" readonly>
+            <p class="uppercase bold">Phone number</p>
+            <input type="tel" value="+375 29 899 75 16" readonly>
+            <p class="uppercase bold">Instagram</p>
+            <a class="bi bi-instagram" href="https://www.instagram.com/" target="_blank"></a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
